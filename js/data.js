@@ -137,7 +137,7 @@ const images = [
         title: "item on instagram",
         href: "https://www.instagram.com/p/BokGOBIBXnm/",
         date: "2024-12-28",
-        tags: ["quotes"]
+        tags: ["visuals"]
     },
     
 ];
