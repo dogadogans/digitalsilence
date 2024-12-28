@@ -10,6 +10,7 @@
     --tag-bg: #f0f0f0;
     --header-bg: #ffffff;
     --link: #000000;
+    --anchor: #dfff7b;
 }
 
 /* Dark theme variables */
@@ -23,6 +24,7 @@
     --tag-bg: #404040;
     --header-bg: #2d2d2d;
     --link: #ffffff;
+    --anchor: #707C16;
 }
 
 /* Base styles */
@@ -162,6 +164,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+/* Anchor link */
+a{
+    color: var(--anchor);
 }
 
 
