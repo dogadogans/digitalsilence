@@ -1,0 +1,458 @@
+/* CSS Variables for theming */
+:root {
+    /* Light theme variables */
+    --background: #f7f7f7;
+    --card-bg: #ffffff;
+    --text: #333333;
+    --text-secondary: #666666;
+    --border: #eeeeee;
+    --shadow: rgba(0,0,0,0.1);
+    --tag-bg: #f0f0f0;
+    --header-bg: #ffffff;
+    --link: #000000;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --background: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --text: #ffffff;
+    --text-secondary: #bbbbbb;
+    --border: #404040;
+    --shadow: rgba(0,0,0,0.3);
+    --tag-bg: #404040;
+    --header-bg: #2d2d2d;
+    --link: #ffffff;
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s ease;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--tag-bg);
+}
+
+.dark-icon {
+    display: none;
+}
+
+[data-theme="dark"] .light-icon {
+    display: none;
+}
+
+[data-theme="dark"] .dark-icon {
+    display: flex;
+}
+
+.light-icon {
+    display: flex;
+}
+
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--header-bg);
+    padding: 15px 30px;
+    box-shadow: 0 1px 3px var(--shadow);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.leftheader {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* This is for info card */
+.info{
+    padding: 90px 30px 4px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.namecard {
+    background: var(--card-bg);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 3px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    grid-column: span 2;
+
+}
+
+.avatar {
+    border-radius: 4px;
+    border: #010101 2px solid;
+    margin-bottom: 8px;
+}
+
+.textbody{
+    font-size: 13px;
+}
+
+.textheader {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    row-gap: 4px;
+    column-gap: 12px;
+    padding-top: 8px;
+    flex-wrap: wrap;
+}
+
+#link {
+    font-size: 13px;
+    text-decoration: none;
+    background: repeat-x bottom;
+    padding-bottom: 1px;
+    position: relative;
+    background: linear-gradient(to right, var(--link) 50%, var(--text-secondary) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease-out;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+#link:hover {
+    background-position: left bottom;
+  }
+
+
+
+
+ /* Selection effect - this changes the text color when selected */
+.textbody::selection , .textheader::selection, #link::selection {
+    color: #e63946; /* A festive red that's visible in both modes */
+    background: rgba(230, 57, 70, 0.35); /* Semi-transparent version of the same red */
+    -webkit-text-fill-color: #d62828; /* Slightly darker red for webkit browsers */
+}
+
+/* Firefox specific selection styles */
+.textbody::-moz-selection , .textheader::-moz-selection, #link::-moz-selection {
+ color: #e63946; /* A festive red that's visible in both modes */
+    background: rgba(230, 57, 70, 0.35); /* Semi-transparent version of the same red */
+    -webkit-text-fill-color: #d62828; /* Slightly darker red for webkit browsers */
+}
+
+
+/* Filter section styles */
+.filters {
+    padding: 12px 30px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 3px;
+    background: var(--card-bg);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: var(--tag-bg);
+}
+
+.tag.active {
+    background: var(--text);
+    color: var(--background);
+    border-color: var(--text);
+}
+
+/* Grid layout styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 30px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Image card styles */
+.image-card {
+    aspect-ratio: 1;
+    background: var(--card-bg);
+    cursor: pointer;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 3px var(--shadow);
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-card:hover {
+    transform: translateY(-2px);
+}
+
+.image-card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    background: var(--background);
+}
+
+.modal-info {
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.modal-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.modal-tag {
+    font-size: 13px;
+    padding: 3px 10px;
+    background: var(--tag-bg);
+    border-radius: 3px;
+    color: var(--text-secondary);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--card-bg);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 2px 5px var(--shadow);
+    color: var(--text);
+}
+
+.close-button:hover {
+    background: var(--tag-bg);
+}
+
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .namecard {
+        background: var(--card-bg);
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 1px 3px var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        grid-column: span 3;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px 15px;
+    }
+    
+    .header {
+        padding: 12px 15px;
+    }
+
+    .filters {
+        padding: 15px 15px 15px;
+    }
+
+    .info{
+        padding: 90px 15px 4px;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .namecard {
+        background: var(--card-bg);
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 1px 3px var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        grid-column: span 5;
+    
+    }
+}
+
+
+/* This is for loading tag and show more */
+.tag-count {
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+.tag.hidden {
+    display: none;
+}
+
+.show-more-btn {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 3px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.show-more-btn:hover {
+    background: var(--tag-bg);
+}
+
+.loader {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.loader-content {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    box-shadow: 0 1px 3px var(--shadow);
+}

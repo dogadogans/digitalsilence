@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>digital silence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assests/favicon.png">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="leftheader">
+            <img src="assests/logo.png" width="40px" alt="a small smiley icon">
+            <h1>digital silence</h1>
+        </div>
+        <button id="themeToggle" class="theme-toggle">
+            <span class="light-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-medium"><circle cx="12" cy="12" r="4"/><path d="M12 3v1"/><path d="M12 20v1"/><path d="M3 12h1"/><path d="M20 12h1"/><path d="m18.364 5.636-.707.707"/><path d="m6.343 17.657-.707.707"/><path d="m5.636 5.636.707.707"/><path d="m17.657 17.657.707.707"/></svg></span>
+            <span class="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+        </button>
+    </header>
+
+    <div class="info">
+        <div class="namecard">
+            <img class="avatar" src="assests/avatarm.png" width="56px"/>
+            <p class="textheader">Where art thou, Doga?</p>
+            <p class="textbody">Probably somewhere in these pixels.</p>
+            <div class="links">
+                <a id="link" href="mailto:dogadogan.me@gmail.com">Email↗</a>
+                <a id="link" href="https://www.thisisdoga.com">Portfolio↗</a>
+                <a id="link" href="https://www.linkedin.com/in/dogadogans">Linkedin↗</a>
+                <a id="link" href="https://unsplash.com/@dogadogans">Unsplash↗</a>
+            </div>
+        </div>
+    </div>
+    <div class="filters" id="tagFilters"></div>
+    <div class="grid" id="imageGrid"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeModal()">×</button>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <div id="modalDate" class="modal-date"></div>
+                <div id="modalTags" class="modal-tags"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
