@@ -139,5 +139,12 @@ const images = [
         date: "2024-12-28",
         tags: ["visuals"]
     },
+    {
+        url: "/images/signoftimes.jpg",
+        title: "billboards everywhere",
+        href: "https://www.instagram.com/p/BokGOBIBXnm/",
+        date: "2024-12-28",
+        tags: ["visuals"]
+    },
     
 ];
