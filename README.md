@@ -20,7 +20,7 @@ The project itself is about collecting visual inspiration, but this README is re
 git init
 
 # Connect to GitHub repository
-git remote add origin [repository-url]
+git remote add origin [repository-url] you can find it from code button if you already created a  readme.md for the project, if not it's already being shown.
 
 # Check repository status
 git status
@@ -30,7 +30,7 @@ git add .                  # Add all files
 git add [filename]         # Add specific file
 
 # Commit changes
-git commit -m "message"    # Always write clear messages!
+git commit -m "message"    # Always write clear messages! in present tense
 ```
 
 ### Daily Workflow
@@ -45,7 +45,8 @@ git add .
 git commit -m "what I changed"
 
 # 4. Push to GitHub
-git push
+git push -u origin main   # FIRST TIME ONLY! Sets up tracking
+git push                  # After that, just use this
 ```
 
 ### Time Travel (Checking Out Old Versions) ⌛
@@ -111,10 +112,7 @@ git checkout [branch-name]
 ## Remember 🧠
 
 - Commit often
-- Write clear messages
+- Write clear messages in Present Tesne
 - When stuck: Status → Add → Commit → Push
-- It's okay to mess up!
 
----
 
-*Note to self: This whole thing started as a way to organize cool website screenshots, but it turned into a pretty good Git learning experience. Keep at it, and don't forget to check this guide when stuck!* 👊
