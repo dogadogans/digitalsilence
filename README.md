@@ -1,6 +1,4 @@
-# My Git Learning Journey 🚀
-
-Hey Future Me! 
+# Digital silence
 
 I started this project to get better at using GitHub and make it a daily habit. The main idea was to collect screenshots from different websites (like are.na and cosmos style) and learn proper version control along the way. I was struggling with Git commands and VS Code at first, so I made this guide to remember everything I learned.
 
