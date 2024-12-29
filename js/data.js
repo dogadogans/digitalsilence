@@ -142,8 +142,20 @@ const images = [
     {
         url: "/images/signoftimes.jpg",
         title: "billboards everywhere",
-        href: "https://www.instagram.com/p/BokGOBIBXnm/",
         date: "2024-12-28",
+        tags: ["visuals"]
+    },
+    {
+        url: "/images/selfsoot.jpeg",
+        title: "billboards everywhere",
+        date: "2024-12-29",
+        tags: ["meme"]
+    },
+    {
+        url: "/images/nowdeath.jpeg",
+        title: "Plague in the dark",
+        href: "https://www.lucasgarcete.com/heraldos-de-la-peste",
+        date: "2024-12-29",
         tags: ["visuals"]
     },
     
