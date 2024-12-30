@@ -147,7 +147,7 @@ const images = [
     },
     {
         url: "/images/selfsoot.jpeg",
-        title: "billboards everywhere",
+        title: "Meditation",
         date: "2024-12-29",
         tags: ["meme"]
     },
@@ -158,5 +158,28 @@ const images = [
         date: "2024-12-29",
         tags: ["visuals"]
     },
-    
+    {
+        url: "/images/questions.jpg",
+        title: "Design process",
+        date: "2024-12-30",
+        tags: ["design"]
+    },
+    {
+        url: "/images/faile.jpg",
+        title: "Fail forward",
+        date: "2024-12-30",
+        tags: ["quotes","meme"]
+    },
+    {
+        url: "/images/nolunch.jpg",
+        title: ".caffeinePower",
+        date: "2024-12-30",
+        tags: ["mood","meme"]
+    },
+    {
+        url: "/images/rotsave.jpg",
+        title: "Rothko everywhere",
+        date: "2024-12-30",
+        tags: ["visuals"]
+    },
 ];
