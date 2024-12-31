@@ -182,4 +182,37 @@ const images = [
         date: "2024-12-30",
         tags: ["visuals"]
     },
+    {
+        url: "/images/ionlydrink.jpg",
+        title: "I never drink... wine.",
+        date: "2024-12-31",
+        tags: ["visuals","movies"]
+    },
+    {
+        url: "/images/bubble2.jpg",
+        title: "Bubble x2",
+        date: "2024-12-31",
+        tags: ["games"]
+    },
+    {
+        url: "/images/powermove.jpg",
+        title: "Spotlight",
+        date: "2024-12-31",
+        tags: ["movies"]
+    },
+    {
+        url: "/images/tired.jpg",
+        title: "[..........] 0% Energy",
+        date: "2024-12-31",
+        tags: ["movies"]
+    },
+        {
+        url: "/images/vs.jpg",
+        title: "Black sheep",
+        date: "2024-12-31",
+        tags: ["movies"]
+    },
+
+
+
 ];
