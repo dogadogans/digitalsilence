@@ -219,12 +219,6 @@ const images = [
         tags: ["visuals","games"]
     },
     {
-        url: "/images/endisnigh.png",
-        title: "End is nigh",
-        date: "2025-01-04",
-        tags: ["visuals","quotes"]
-    },
-    {
         url: "/images/ladyjanegrey.jpg",
         title: "Lady J.",
         date: "2025-01-04",
