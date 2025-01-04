@@ -212,7 +212,37 @@ const images = [
         date: "2024-12-31",
         tags: ["movies"]
     },
-
+    {
+        url: "/images/digitalrealm.jpeg",
+        title: "PlayStation",
+        date: "2025-01-04",
+        tags: ["visuals","games"]
+    },
+    {
+        url: "/images/endisnigh.png",
+        title: "End is nigh",
+        date: "2025-01-04",
+        tags: ["visuals","quotes"]
+    },
+    {
+        url: "/images/ladyjanegrey.jpg",
+        title: "Lady J.",
+        date: "2025-01-04",
+        tags: ["art"]
+    },
+    {
+        url: "/images/galaxy.jpeg",
+        title: "Are we there yet?",
+        href: "https://www.instagram.com/p/C0m8gC_oSH2/",
+        date: "2025-01-04",
+        tags: ["visuals","mood"]
+    },
+    {
+        url: "/images/trash.jpeg",
+        title: "Toss it.",
+        date: "2025-01-04",
+        tags: ["visuals","design"]
+    },
 
 
 ];
