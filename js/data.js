@@ -229,7 +229,7 @@ const images = [
         title: "Are we there yet?",
         href: "https://www.instagram.com/p/C0m8gC_oSH2/",
         date: "2025-01-04",
-        tags: ["visuals","mood"]
+        tags: ["visuals","mood","pixels"]
     },
     {
         url: "/images/trash.jpeg",
@@ -237,6 +237,45 @@ const images = [
         date: "2025-01-04",
         tags: ["visuals","design"]
     },
-
+    {
+        url: "/images/catan.png",
+        href: "https://tr.pinterest.com/pin/505318020694837112/",
+        title: "Modular Map",
+        date: "2025-01-11",
+        tags: ["games","map","visuals"]
+    },
+    {
+        url: "/images/mapidea.jpg",
+        href: "https://www.cartographersguild.com/album.php?albumid=4358&attachmentid=76674",
+        title: "Map Legend",
+        date: "2025-01-11",
+        tags: ["map","visuals"]
+    },
+    {
+        url: "/images/nintendocoloris.jpg",
+        title: "Nintendo",
+        date: "2025-01-11",
+        tags: ["games","visuals","colors"]
+    },
+    {
+        url: "/images/patterngame.png",
+        title: "Pattern map",
+        href: "https://old.reddit.com/r/Brawlstars/comments/g7733i/no_bushes_showdown_mao_wild_west/",
+        date: "2025-01-11",
+        tags: ["games","visuals","colors","pattern"]
+    },
+    {
+        url: "/images/pixelcolrs.jpg",
+        title: "Colors",
+        href: "https://tr.pinterest.com/pin/565483296942331650/",
+        date: "2025-01-11",
+        tags: ["games","visuals","colors","pixels"]
+    },
+    {
+        url: "/images/treatyo.jpg",
+        title: "Self care",
+        date: "2025-01-11",
+        tags: ["mood","quotes","advice"]
+    },
 
 ];
