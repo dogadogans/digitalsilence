@@ -277,5 +277,11 @@ const images = [
         date: "2025-01-11",
         tags: ["mood","quotes","advice"]
     },
+        {
+        url: "/images/neon.jpeg",
+        title: "Self care",
+        date: "2025-01-19",
+        tags: ["movies","visuals"]
+    },
 
 ];
