@@ -279,9 +279,39 @@ const images = [
     },
         {
         url: "/images/neon.jpeg",
-        title: "Self care",
+        title: "Cinema",
         date: "2025-01-19",
         tags: ["movies","visuals"]
+    },
+    {
+        url: "/images/become.jpg",
+        title: "Become",
+        date: "2025-02-09",
+        tags: ["quotes","visuals"]
+    },
+    {
+        url: "/images/bubtr.jpg",
+        title: "Bubble Bobble",
+        date: "2025-02-09",
+        tags: ["games","quotes"]
+    },
+    {
+        url: "/images/sys.png",
+        title: "Struggles of Sisyphus",
+        date: "2025-02-09",
+        tags: ["meme","quotes"]
+    },
+    {
+        url: "/images/werk.png",
+        title: "Work",
+        date: "2025-02-09",
+        tags: ["meme"]
+    },
+    {
+        url: "/images/workflow.jpg",
+        title: "Work",
+        date: "2025-02-09",
+        tags: ["design"]
     },
 
 ];
