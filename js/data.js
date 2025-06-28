@@ -313,5 +313,12 @@ const images = [
         date: "2025-02-09",
         tags: ["design"]
     },
+        {
+        url: "/images/jap.jpeg",
+        title: "Illustration",
+        href: "https://www.instagram.com/p/C6RVZ5BIN0F/",
+        date: "2025-06-28",
+        tags: ["illustration","colors"]
+    },
 
 ];
